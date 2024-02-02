@@ -1,0 +1,60 @@
+html{
+    background: linear-gradient(wheat, white);
+    height: 100%;
+}
+body{
+    margin-top: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 98vh;   
+
+}
+.contentBox {
+    text-align: center; 
+    /* padding: 100px 50px; */
+    border: 5px double black;
+    max-width: 30vw;
+}
+#addTaskForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #696969
+}
+#taskTitle{
+    margin: 15px;
+    width: 90%;
+}
+#buttonTitle{
+    width: 50%;
+}
+h1{
+    font-size: 4em;
+    color: #696969;
+    margin: 15px;
+}
+#taskList li{
+    display: flex;
+    flex-wrap: wrap ;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 5  ;
+}
+@media only screen and (max-width: 600px) {
+    .contentBox{
+        border:  none;
+        max-width: 100%;
+    }
+    body{
+        border: 5px double black;
+        margin: 0;
+    }
+    #taskList{
+        border: 1px solid turquoise;
+        border-radius: 15px;
+        padding: 50px 20px 50px 20px;
+    }
+  }
